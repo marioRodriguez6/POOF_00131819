@@ -124,13 +124,13 @@ namespace Parcial_03
                 {
                     var Query = "select u.nombre, t.temperatura " +
                                 "from REGISTRO t, USUARIO u " +
-                                "WHERE t.carnetUs = u.carnetUs order by t.temperatura) " +
+                                "WHERE t.carnetUs = u.carnetUs order by t.temperatura " +
                                 "DESC LIMIT 5";
         
                     var dt = ConnectionDbp3.ExecuteQuery(Query);
                     try
                     {
-                        dataGridView6.DataSource = dt;
+                        dataGridView7.DataSource = dt;
                     }
                     catch (Exception exception)
                     {
@@ -145,7 +145,7 @@ namespace Parcial_03
                                     var dt = ConnectionDbp3.ExecuteQuery(Query);
                                     try
                                     {
-                                        dataGridView6.DataSource = dt;
+                                        dataGridView2.DataSource = dt;
                                     }
                                     catch (Exception exception)
                                     {

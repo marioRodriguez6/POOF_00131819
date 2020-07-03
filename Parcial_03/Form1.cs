@@ -7,6 +7,8 @@ namespace Parcial_03
 {
     public partial class Form1 : Form
     {
+        private Form dr = new WFAdministrador();
+        private Form ds = new WFSecutityGuard();
         private delegate void Mydelegate(Form NextWFs);
         private static Mydelegate _accountmanagment;
         
@@ -15,10 +17,7 @@ namespace Parcial_03
             InitializeComponent();
         }
         
-        IData Cambio = new ChangeWFAdmin();
-
-        private Form dr = new WFAdministrador();
-        private Form ds = new WFSecutityGuard();
+        IData Cambio = new ChangeWFAdmin()
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
