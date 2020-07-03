@@ -8,7 +8,7 @@ namespace Parcial_03
     {
         private static readonly string host = "127.0.0.1";
 
-        private static readonly string database = "Parcial_03";
+        private static readonly string database = "parcial_03";
 
         private static readonly string userId = "postgres";
 

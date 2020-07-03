@@ -101,12 +101,6 @@
         </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="UCSecurityGuard.cs">
-          <SubType>UserControl</SubType>
-        </Compile>
-        <Compile Include="UCSecurityGuard.Designer.cs">
-          <DependentUpon>UCSecurityGuard.cs</DependentUpon>
-        </Compile>
         <Compile Include="WFAdministrador.cs">
           <SubType>Form</SubType>
         </Compile>
@@ -118,6 +112,12 @@
         </Compile>
         <Compile Include="WFEmpleado.Designer.cs">
           <DependentUpon>WFEmpleado.cs</DependentUpon>
+        </Compile>
+        <Compile Include="WFSecutityGuard.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="WFSecutityGuard.Designer.cs">
+          <DependentUpon>WFSecutityGuard.cs</DependentUpon>
         </Compile>
         <EmbeddedResource Include="Form1.resx">
           <DependentUpon>Form1.cs</DependentUpon>
@@ -131,14 +131,14 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
-        <EmbeddedResource Include="UCSecurityGuard.resx">
-          <DependentUpon>UCSecurityGuard.cs</DependentUpon>
-        </EmbeddedResource>
         <EmbeddedResource Include="WFAdministrador.resx">
           <DependentUpon>WFAdministrador.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="WFEmpleado.resx">
           <DependentUpon>WFEmpleado.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="WFSecutityGuard.resx">
+          <DependentUpon>WFSecutityGuard.cs</DependentUpon>
         </EmbeddedResource>
         <None Include="packages.config" />
         <None Include="Properties\Settings.settings">

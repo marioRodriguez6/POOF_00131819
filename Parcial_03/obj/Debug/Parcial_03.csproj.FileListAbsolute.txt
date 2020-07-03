@@ -32,4 +32,4 @@ C:\Users\usuario\Documents\POOF_00131819\Parcial_03\obj\Debug\Parcial_03.Form1.r
 C:\Users\usuario\Documents\POOF_00131819\Parcial_03\obj\Debug\Parcial_03.WFAdministrador.resources
 C:\Users\usuario\Documents\POOF_00131819\Parcial_03\obj\Debug\Parcial_03.csproj.CopyComplete
 C:\Users\usuario\Documents\POOF_00131819\Parcial_03\obj\Debug\Parcial_03.WFEmpleado.resources
-C:\Users\usuario\Documents\POOF_00131819\Parcial_03\obj\Debug\Parcial_03.UCSecurityGuard.resources
+C:\Users\usuario\Documents\POOF_00131819\Parcial_03\obj\Debug\Parcial_03.WFSecutityGuard.resources
