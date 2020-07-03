@@ -32,7 +32,7 @@ namespace Parcial_03
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabUsuario = new System.Windows.Forms.TabPage();
+            this.tabEmpleados = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabUScrear = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -51,36 +51,37 @@ namespace Parcial_03
             this.label17 = new System.Windows.Forms.Label();
             this.CB_Depa = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
+            this.TB_dui = new System.Windows.Forms.TextBox();
             this.tabUSeliminar = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.Btn_DeleteUser = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.tabUSver = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tabNegocios = new System.Windows.Forms.TabPage();
+            this.tabDatos = new System.Windows.Forms.TabPage();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label22 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.tabControl7 = new System.Windows.Forms.TabControl();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.button14 = new System.Windows.Forms.Button();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
+            this.button15 = new System.Windows.Forms.Button();
+            this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.tabExit = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.button11 = new System.Windows.Forms.Button();
@@ -141,26 +142,33 @@ namespace Parcial_03
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.TB_dui = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl1.SuspendLayout();
-            this.tabUsuario.SuspendLayout();
+            this.tabEmpleados.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabUScrear.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tabUSeliminar.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            this.tabUSver.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
-            this.tabNegocios.SuspendLayout();
+            this.tabDatos.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView5)).BeginInit();
             this.tabPage10.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView6)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView2)).BeginInit();
+            this.tabPage13.SuspendLayout();
+            this.tabControl7.SuspendLayout();
+            this.tabPage14.SuspendLayout();
+            this.tableLayoutPanel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView7)).BeginInit();
+            this.tabPage15.SuspendLayout();
+            this.tableLayoutPanel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView8)).BeginInit();
             this.tabExit.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -187,8 +195,9 @@ namespace Parcial_03
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabUsuario);
-            this.tabControl1.Controls.Add(this.tabNegocios);
+            this.tabControl1.Controls.Add(this.tabEmpleados);
+            this.tabControl1.Controls.Add(this.tabDatos);
+            this.tabControl1.Controls.Add(this.tabPage13);
             this.tabControl1.Controls.Add(this.tabExit);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -197,22 +206,21 @@ namespace Parcial_03
             this.tabControl1.Size = new System.Drawing.Size(985, 735);
             this.tabControl1.TabIndex = 1;
             // 
-            // tabUsuario
+            // tabEmpleados
             // 
-            this.tabUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.tabUsuario.Controls.Add(this.tabControl2);
-            this.tabUsuario.Location = new System.Drawing.Point(4, 22);
-            this.tabUsuario.Name = "tabUsuario";
-            this.tabUsuario.Padding = new System.Windows.Forms.Padding(3);
-            this.tabUsuario.Size = new System.Drawing.Size(977, 709);
-            this.tabUsuario.TabIndex = 0;
-            this.tabUsuario.Text = "Usuarios";
+            this.tabEmpleados.BackColor = System.Drawing.Color.Transparent;
+            this.tabEmpleados.Controls.Add(this.tabControl2);
+            this.tabEmpleados.Location = new System.Drawing.Point(4, 22);
+            this.tabEmpleados.Name = "tabEmpleados";
+            this.tabEmpleados.Padding = new System.Windows.Forms.Padding(3);
+            this.tabEmpleados.Size = new System.Drawing.Size(977, 709);
+            this.tabEmpleados.TabIndex = 0;
+            this.tabEmpleados.Text = "Usuarios";
             // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabUScrear);
             this.tabControl2.Controls.Add(this.tabUSeliminar);
-            this.tabControl2.Controls.Add(this.tabUSver);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl2.Location = new System.Drawing.Point(3, 3);
             this.tabControl2.Name = "tabControl2";
@@ -433,6 +441,14 @@ namespace Parcial_03
             this.label34.Text = "DUI";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TB_dui
+            // 
+            this.TB_dui.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_dui.Location = new System.Drawing.Point(587, 567);
+            this.TB_dui.Name = "TB_dui";
+            this.TB_dui.Size = new System.Drawing.Size(261, 20);
+            this.TB_dui.TabIndex = 22;
+            // 
             // tabUSeliminar
             // 
             this.tabUSeliminar.Controls.Add(this.tableLayoutPanel5);
@@ -517,67 +533,15 @@ namespace Parcial_03
             this.comboBox3.Size = new System.Drawing.Size(211, 21);
             this.comboBox3.TabIndex = 9;
             // 
-            // tabUSver
+            // tabDatos
             // 
-            this.tabUSver.Controls.Add(this.tableLayoutPanel1);
-            this.tabUSver.Location = new System.Drawing.Point(4, 22);
-            this.tabUSver.Name = "tabUSver";
-            this.tabUSver.Size = new System.Drawing.Size(963, 677);
-            this.tabUSver.TabIndex = 2;
-            this.tabUSver.Text = "Ver US";
-            this.tabUSver.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.26852F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.73148F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(963, 677);
-            this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 2);
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(957, 584);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.tableLayoutPanel1.SetColumnSpan(this.button1, 2);
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(3, 593);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(957, 81);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Recargar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // tabNegocios
-            // 
-            this.tabNegocios.Controls.Add(this.tabControl4);
-            this.tabNegocios.Location = new System.Drawing.Point(4, 22);
-            this.tabNegocios.Name = "tabNegocios";
-            this.tabNegocios.Size = new System.Drawing.Size(977, 709);
-            this.tabNegocios.TabIndex = 2;
-            this.tabNegocios.Text = "Negocios";
-            this.tabNegocios.UseVisualStyleBackColor = true;
+            this.tabDatos.Controls.Add(this.tabControl4);
+            this.tabDatos.Location = new System.Drawing.Point(4, 22);
+            this.tabDatos.Name = "tabDatos";
+            this.tabDatos.Size = new System.Drawing.Size(977, 709);
+            this.tabDatos.TabIndex = 2;
+            this.tabDatos.Text = "Resumen";
+            this.tabDatos.UseVisualStyleBackColor = true;
             // 
             // tabControl4
             // 
@@ -599,101 +563,52 @@ namespace Parcial_03
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage8.Size = new System.Drawing.Size(969, 683);
             this.tabPage8.TabIndex = 0;
-            this.tabPage8.Text = "Agregar";
+            this.tabPage8.Text = "Depart + concurrido";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Lavender;
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox2, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.textBox10, 1, 1);
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.61028F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.38972F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 255F));
+            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dataGridView5, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 4;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.15974F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.15973F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.22947F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.45107F));
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.50163F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(963, 677);
-            this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(3, 150);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(475, 150);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Negocio";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.MediumPurple;
-            this.tableLayoutPanel2.SetColumnSpan(this.label6, 2);
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label6.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label6.Location = new System.Drawing.Point(3, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(957, 150);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Agregar Negocio";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(3, 300);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(475, 265);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Descripcion";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(607, 422);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(229, 20);
-            this.textBox2.TabIndex = 8;
+            this.tableLayoutPanel2.TabIndex = 0;
             // 
             // button2
             // 
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.BackColor = System.Drawing.Color.MediumPurple;
-            this.tableLayoutPanel2.SetColumnSpan(this.button2, 2);
+            this.button2.BackColor = System.Drawing.Color.Maroon;
+            this.tableLayoutPanel2.SetColumnSpan(this.button2, 3);
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button2.Location = new System.Drawing.Point(3, 568);
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(3, 612);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(957, 106);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Agregar";
+            this.button2.Size = new System.Drawing.Size(957, 62);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Recargar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox10
+            // dataGridView5
             // 
-            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox10.Location = new System.Drawing.Point(621, 215);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(201, 20);
-            this.textBox10.TabIndex = 14;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel2.SetColumnSpan(this.dataGridView5, 3);
+            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView5.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(957, 603);
+            this.dataGridView5.TabIndex = 3;
             // 
             // tabPage10
             // 
@@ -702,79 +617,52 @@ namespace Parcial_03
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Size = new System.Drawing.Size(969, 683);
             this.tabPage10.TabIndex = 2;
-            this.tabPage10.Text = "Eliminar";
+            this.tabPage10.Text = "Empleados en empresa";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel8
             // 
             this.tableLayoutPanel8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel8.BackColor = System.Drawing.Color.Lavender;
+            this.tableLayoutPanel8.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.label22, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.button8, 0, 2);
-            this.tableLayoutPanel8.Controls.Add(this.comboBox6, 1, 1);
-            this.tableLayoutPanel8.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 488F));
+            this.tableLayoutPanel8.Controls.Add(this.button8, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.dataGridView6, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 3;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.75727F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.42308F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.86539F));
+            this.tableLayoutPanel8.RowCount = 2;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.14056F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.85944F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(969, 683);
             this.tableLayoutPanel8.TabIndex = 3;
-            // 
-            // label22
-            // 
-            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label22.ForeColor = System.Drawing.Color.DimGray;
-            this.label22.Location = new System.Drawing.Point(3, 134);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(478, 439);
-            this.label22.TabIndex = 5;
-            this.label22.Text = "Negocio";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button8
             // 
             this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button8.BackColor = System.Drawing.Color.MediumPurple;
+            this.button8.BackColor = System.Drawing.Color.Maroon;
             this.tableLayoutPanel8.SetColumnSpan(this.button8, 2);
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button8.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button8.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button8.Location = new System.Drawing.Point(3, 576);
+            this.button8.Location = new System.Drawing.Point(3, 604);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(963, 104);
+            this.button8.Size = new System.Drawing.Size(963, 72);
             this.button8.TabIndex = 4;
-            this.button8.Text = "Eliminar";
+            this.button8.Text = "Recargar";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // comboBox6
+            // dataGridView6
             // 
-            this.comboBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(626, 343);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(200, 21);
-            this.comboBox6.TabIndex = 9;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.MediumPurple;
-            this.tableLayoutPanel8.SetColumnSpan(this.label7, 2);
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(963, 134);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Eliminar Negocio";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel8.SetColumnSpan(this.dataGridView6, 2);
+            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView6.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(963, 595);
+            this.dataGridView6.TabIndex = 5;
             // 
             // tabPage5
             // 
@@ -783,7 +671,7 @@ namespace Parcial_03
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(969, 683);
             this.tabPage5.TabIndex = 3;
-            this.tabPage5.Text = "Ver Negocios";
+            this.tabPage5.Text = "Historico";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel4
@@ -800,6 +688,7 @@ namespace Parcial_03
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.26852F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.73148F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(969, 683);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
@@ -816,7 +705,7 @@ namespace Parcial_03
             // button4
             // 
             this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.BackColor = System.Drawing.Color.MediumPurple;
+            this.button4.BackColor = System.Drawing.Color.Maroon;
             this.tableLayoutPanel4.SetColumnSpan(this.button4, 2);
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
@@ -827,6 +716,136 @@ namespace Parcial_03
             this.button4.TabIndex = 1;
             this.button4.Text = "Recargar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.Controls.Add(this.tabControl7);
+            this.tabPage13.Location = new System.Drawing.Point(4, 22);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Size = new System.Drawing.Size(977, 709);
+            this.tabPage13.TabIndex = 4;
+            this.tabPage13.Text = "Resumenes Extra";
+            this.tabPage13.UseVisualStyleBackColor = true;
+            // 
+            // tabControl7
+            // 
+            this.tabControl7.Controls.Add(this.tabPage14);
+            this.tabControl7.Controls.Add(this.tabPage15);
+            this.tabControl7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl7.Location = new System.Drawing.Point(0, 0);
+            this.tabControl7.Name = "tabControl7";
+            this.tabControl7.SelectedIndex = 0;
+            this.tabControl7.Size = new System.Drawing.Size(977, 709);
+            this.tabControl7.TabIndex = 3;
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.Controls.Add(this.tableLayoutPanel16);
+            this.tabPage14.Location = new System.Drawing.Point(4, 22);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(969, 683);
+            this.tabPage14.TabIndex = 0;
+            this.tabPage14.Text = "Top 5 temperatura";
+            this.tabPage14.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel16
+            // 
+            this.tableLayoutPanel16.ColumnCount = 3;
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.61028F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.38972F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 255F));
+            this.tableLayoutPanel16.Controls.Add(this.button14, 0, 1);
+            this.tableLayoutPanel16.Controls.Add(this.dataGridView7, 0, 0);
+            this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
+            this.tableLayoutPanel16.RowCount = 2;
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.50163F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(963, 677);
+            this.tableLayoutPanel16.TabIndex = 0;
+            // 
+            // button14
+            // 
+            this.button14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button14.BackColor = System.Drawing.Color.Maroon;
+            this.tableLayoutPanel16.SetColumnSpan(this.button14, 3);
+            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button14.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.button14.ForeColor = System.Drawing.Color.White;
+            this.button14.Location = new System.Drawing.Point(3, 612);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(957, 62);
+            this.button14.TabIndex = 2;
+            this.button14.Text = "Recargar";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel16.SetColumnSpan(this.dataGridView7, 3);
+            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView7.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.Size = new System.Drawing.Size(957, 603);
+            this.dataGridView7.TabIndex = 3;
+            // 
+            // tabPage15
+            // 
+            this.tabPage15.Controls.Add(this.tableLayoutPanel17);
+            this.tabPage15.Location = new System.Drawing.Point(4, 22);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Size = new System.Drawing.Size(969, 683);
+            this.tabPage15.TabIndex = 2;
+            this.tabPage15.Text = "Empleados mayores de 60";
+            this.tabPage15.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel17
+            // 
+            this.tableLayoutPanel17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel17.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel17.ColumnCount = 2;
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 488F));
+            this.tableLayoutPanel17.Controls.Add(this.button15, 0, 1);
+            this.tableLayoutPanel17.Controls.Add(this.dataGridView8, 0, 0);
+            this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
+            this.tableLayoutPanel17.RowCount = 2;
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.14056F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.85944F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(969, 683);
+            this.tableLayoutPanel17.TabIndex = 3;
+            // 
+            // button15
+            // 
+            this.button15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button15.BackColor = System.Drawing.Color.Maroon;
+            this.tableLayoutPanel17.SetColumnSpan(this.button15, 2);
+            this.button15.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.button15.ForeColor = System.Drawing.Color.AliceBlue;
+            this.button15.Location = new System.Drawing.Point(3, 604);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(963, 72);
+            this.button15.TabIndex = 4;
+            this.button15.Text = "Recargar";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView8
+            // 
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel17.SetColumnSpan(this.dataGridView8, 2);
+            this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView8.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.Size = new System.Drawing.Size(963, 595);
+            this.dataGridView8.TabIndex = 5;
             // 
             // tabExit
             // 
@@ -841,6 +860,7 @@ namespace Parcial_03
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel6.BackColor = System.Drawing.Color.Silver;
             this.tableLayoutPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -864,7 +884,7 @@ namespace Parcial_03
             // button11
             // 
             this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button11.BackColor = System.Drawing.Color.MediumPurple;
+            this.button11.BackColor = System.Drawing.Color.Maroon;
             this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button11.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button11.ForeColor = System.Drawing.Color.White;
@@ -874,10 +894,11 @@ namespace Parcial_03
             this.button11.TabIndex = 4;
             this.button11.Text = "Regresar al Login";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.Color.MediumPurple;
+            this.label11.BackColor = System.Drawing.Color.Maroon;
             this.tableLayoutPanel6.SetColumnSpan(this.label11, 3);
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
@@ -886,12 +907,12 @@ namespace Parcial_03
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(971, 98);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Hoy, Separados somos mas fuertes.";
+            this.label11.Text = "Regresar al Login";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
-            this.label12.BackColor = System.Drawing.Color.MediumPurple;
+            this.label12.BackColor = System.Drawing.Color.Silver;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Location = new System.Drawing.Point(784, 662);
             this.label12.Name = "label12";
@@ -900,7 +921,7 @@ namespace Parcial_03
             // 
             // label13
             // 
-            this.label13.BackColor = System.Drawing.Color.MediumPurple;
+            this.label13.BackColor = System.Drawing.Color.Silver;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Location = new System.Drawing.Point(3, 662);
             this.label13.Name = "label13";
@@ -1593,13 +1614,21 @@ namespace Parcial_03
             this.tabControl3.Size = new System.Drawing.Size(200, 100);
             this.tabControl3.TabIndex = 0;
             // 
-            // TB_dui
+            // tableLayoutPanel15
             // 
-            this.TB_dui.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TB_dui.Location = new System.Drawing.Point(587, 567);
-            this.TB_dui.Name = "TB_dui";
-            this.TB_dui.Size = new System.Drawing.Size(261, 20);
-            this.TB_dui.TabIndex = 22;
+            this.tableLayoutPanel15.ColumnCount = 4;
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.61028F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.38972F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 247F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
+            this.tableLayoutPanel15.RowCount = 2;
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel15.TabIndex = 0;
             // 
             // WFAdministrador
             // 
@@ -1612,26 +1641,32 @@ namespace Parcial_03
             this.Text = "WFAdministrador";
             this.Load += new System.EventHandler(this.WFAdministrador_Load);
             this.tabControl1.ResumeLayout(false);
-            this.tabUsuario.ResumeLayout(false);
+            this.tabEmpleados.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabUScrear.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tabUSeliminar.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
-            this.tabUSver.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
-            this.tabNegocios.ResumeLayout(false);
+            this.tabDatos.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView5)).EndInit();
             this.tabPage10.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView6)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView2)).EndInit();
+            this.tabPage13.ResumeLayout(false);
+            this.tabControl7.ResumeLayout(false);
+            this.tabPage14.ResumeLayout(false);
+            this.tableLayoutPanel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView7)).EndInit();
+            this.tabPage15.ResumeLayout(false);
+            this.tableLayoutPanel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView8)).EndInit();
             this.tabExit.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -1660,11 +1695,12 @@ namespace Parcial_03
         }
 
         private System.Windows.Forms.Button Btn_DeleteUser;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -1677,11 +1713,13 @@ namespace Parcial_03
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.DataGridView dataGridView8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -1696,7 +1734,6 @@ namespace Parcial_03
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
@@ -1711,10 +1748,6 @@ namespace Parcial_03
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabControl tabControl2;
@@ -1722,13 +1755,18 @@ namespace Parcial_03
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabControl tabControl5;
         private System.Windows.Forms.TabControl tabControl6;
+        private System.Windows.Forms.TabControl tabControl7;
+        private System.Windows.Forms.TabPage tabDatos;
+        private System.Windows.Forms.TabPage tabEmpleados;
         private System.Windows.Forms.TabPage tabExit;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
@@ -1737,11 +1775,13 @@ namespace Parcial_03
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.TabPage tabNegocios;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.TabPage tabPage11;
         private System.Windows.Forms.TabPage tabPage12;
+        private System.Windows.Forms.TabPage tabPage13;
+        private System.Windows.Forms.TabPage tabPage14;
+        private System.Windows.Forms.TabPage tabPage15;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
@@ -1752,8 +1792,6 @@ namespace Parcial_03
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.TabPage tabUScrear;
         private System.Windows.Forms.TabPage tabUSeliminar;
-        private System.Windows.Forms.TabPage tabUsuario;
-        private System.Windows.Forms.TabPage tabUSver;
         private System.Windows.Forms.TextBox TB_Apellido;
         private System.Windows.Forms.TextBox TB_Carnet;
         private System.Windows.Forms.TextBox TB_dui;
@@ -1761,8 +1799,6 @@ namespace Parcial_03
         private System.Windows.Forms.TextBox TB_Name;
         private System.Windows.Forms.TextBox TB_Password;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;

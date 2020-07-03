@@ -3,7 +3,6 @@ using Npgsql;
 
 namespace Parcial_03
 {
-    
     public class ConnectionDbp3
     {
         private static readonly string host = "127.0.0.1";
